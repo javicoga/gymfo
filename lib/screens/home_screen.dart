@@ -172,7 +172,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: LinearProgressIndicator(
                 value: _progress,
                 backgroundColor: Colors.grey,
-                valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
+                valueColor: AlwaysStoppedAnimation<Color>(widget.color),
               ),
             ),
             SizedBox(height: 20,)
@@ -231,7 +231,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       Padding(
                         padding: const EdgeInsets.only(left: 30),
                         child: ElevatedButton(
-                          style: ButtonStyle(backgroundColor: MaterialStatePropertyAll(Colors.red)),
+                          style: ButtonStyle(backgroundColor: MaterialStatePropertyAll(Colors.red[900])),
                           child: Text('Cancelar',),
                           onPressed: () {
                             Navigator.pop(context);
@@ -239,7 +239,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                       ElevatedButton(
-                        style: ButtonStyle(backgroundColor: MaterialStatePropertyAll(Colors.green)),
+                        style: ButtonStyle(backgroundColor: MaterialStatePropertyAll(Colors.green[900])),
                         child: Text('Confirmar',),
                         onPressed: () {
                           String fechaVencimiento = '';

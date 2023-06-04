@@ -91,20 +91,8 @@ class _OpcionesScreenState extends State<OpcionesScreen> {
               style: TextStyle(fontSize: 18),
             ),
             SizedBox(width: 10),
-            Container(
-              decoration: BoxDecoration(
-                color: selectedColor,
-                border: Border.all(color: Colors.black, width: 3),
-                borderRadius: BorderRadius.circular(25),
-              ),
-              width: 50,
-              height: 50,
-            ),
-            SizedBox(width: 20),
-            ElevatedButton(
-              style: ButtonStyle(backgroundColor: MaterialStatePropertyAll(Colors.green[900])),
-              child: Text('Seleccionar color'),
-              onPressed: () {
+            GestureDetector(
+              onTap: () {
                 showDialog(
                   context: context,
                   builder: (BuildContext context) {
@@ -129,7 +117,17 @@ class _OpcionesScreenState extends State<OpcionesScreen> {
                   },
                 );
               },
+              child: Container(
+                decoration: BoxDecoration(
+                  color: selectedColor,
+                  border: Border.all(color: Colors.black, width: 3),
+                  borderRadius: BorderRadius.circular(25),
+                ),
+                width: 50,
+                height: 50,
+              ),
             ),
+            SizedBox(width: 20),
           ],
         ),
         SizedBox(height: 20,),

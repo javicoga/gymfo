@@ -109,6 +109,7 @@ class _DetallesMaquinaScreenState extends State<DetallesMaquinaScreen> {
   @override
   void dispose() {
     super.dispose();
+    _chewieController.videoPlayerController.dispose();
     _chewieController.dispose();
   }
 }
