@@ -1,0 +1,33 @@
+name: gymfo
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=2.19.3 <3.0.0'
+
+dependencies:
+  chewie: ^1.4.0
+  flutter:
+    sdk: flutter
+  flutter_colorpicker: ^1.0.3
+  flutter_custom_tabs: ^1.0.4
+  flutter_form_builder: ^7.8.0
+  flutter_native_splash: ^2.2.19
+  http: ^0.13.5
+  provider: ^6.0.5
+  url_launcher: ^6.1.10
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter_native_splash:
+  image: icons/splash.png
+  color: "#FFFFFF"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - icons/

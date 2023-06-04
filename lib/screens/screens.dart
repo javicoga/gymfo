@@ -1,0 +1,11 @@
+export 'package:gymfo/screens/promo_form.dart';
+export 'package:gymfo/screens/promociones_screen.dart';
+export 'package:gymfo/screens/form.dart';
+export 'package:gymfo/screens/detalles_entrenador_screen.dart';
+export 'package:gymfo/screens/detalles_maquina_screen.dart';
+export 'package:gymfo/screens/login_screen.dart';
+export 'package:gymfo/screens/entrenador_screen.dart';
+export 'package:gymfo/screens/home_screen.dart';
+export 'package:gymfo/screens/maquina_screen.dart';
+export 'package:gymfo/screens/opciones_screen.dart';
+export 'package:gymfo/screens/registro_screen.dart';
